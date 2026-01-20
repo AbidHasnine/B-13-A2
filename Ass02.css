@@ -244,8 +244,10 @@ body {
 
 .section-title {
     font-size: 36px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+    color: #ffffff;
 }
 
 
@@ -296,4 +298,80 @@ body {
     color: #b8b8d4;
     letter-spacing: 1px;
     font-weight: 500;
+}
+
+
+.features {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 60px 20px;
+}
+
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 40px 35px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.feature-card img {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 24px;
+}
+
+
+.feature-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+
+.feature-card p {
+    color: #a0a0c0;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+.premium-card {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+
+.mobile-card {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
+
+.global-card {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+}
+
+.exclusive-card {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+
+.rich-card {
+    grid-column: 3;
+    grid-row: 3;
 }
